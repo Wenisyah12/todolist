@@ -80,6 +80,8 @@ h1{
     font-size: 1rem;
     color: #22281F;
     margin-bottom: 10px;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 #task-input:focus, #date-input:focus{
