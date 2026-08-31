@@ -350,4 +350,8 @@ ul#task-list{
     .task:hover .task-actions { 
        cursor: pointer;
     }
+
+    #date-input{
+        background:#F7F4EE;
+    }
  }
