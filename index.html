@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sheet">
+        <div class="sheet-head">
+            <h1>Today's To-Do List</h1>
+            <span class="date" id="today"></span>
+        </div>
+        <div class="add-panel">
+            <input type="text" id="task-input" placeholder="Type Here..."
+            autocomplete="off">
+            <div class="add-row">
+                <input type="date" id="date-input">
+                <button class="btn-add" id="btn-add">Add</button>
+            </div>
+        </div>
+        <div class="toolbar">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="finish">Finish</button>
+            </div>
+            <select class="select-option" id="select-option">
+                <option value="created">Sort: Newest</option>
+                <option value="due">Sort: Deadline</option>
+            </select>
+        </div>
+        <ul id="task-list">
+
+        </ul>
+        <div class="sheet-foot">
+            <span id="counter">0 Tasks Left</span>
+            <button class="clear-btn" id="clear-complete">Delete Completed Tasks</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
